@@ -142,15 +142,10 @@ li.menu-list {
   fill: var(--dark-color);
   margin-right: 10px;
 }
-
-.contact-item:hover,
-.contact-item:focus {
-  color: var(--accent-color);
-}
-
-.icon-contact:hover,
-.icon-contact:focus {
+.menu-list:hover .contact-item,
+.menu-list:hover .icon-contact {
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 h1 {
@@ -169,6 +164,8 @@ h1 {
 }
 .backgraund-main {
   background-image: url(../image/heroimage/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   width: 100%;
   height: 600px;
@@ -348,7 +345,7 @@ address {
 .icon-client {
   fill: var(--icon-client-color);
 }
-.client-item {
+.client-link {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -363,10 +360,8 @@ address {
   justify-content: center;
   align-items: center;
 }
-.client-item:hover,
-.client-item:focus,
-.icon-client:hover,
-.icon-client:focus {
+.client-item:hover .icon-client,
+.client-item:hover .client-link {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -429,4 +424,38 @@ address {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
+}
+
+.bagdrop {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  background: rgba(47, 48, 58, 0.9);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  width: 528px;
+  width: 581px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+}
+.modal-text {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.bagdrop.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
 }
