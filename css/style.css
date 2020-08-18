@@ -436,11 +436,15 @@ address {
 }
 .modal {
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50% -50%);
+  transform: translate(-50% -50%); */
+  top: 221px;
+  left: 536px;
+  right: 536px;
+  bottom: 222px;
   width: 528px;
-  width: 581px;
+  height: 581px;
   background-color: rgba(255, 255, 255, 0.6);
 }
 .btn-close {
