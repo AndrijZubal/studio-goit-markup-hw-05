@@ -433,7 +433,7 @@ address {
   top: 0px;
   right: 0;
   bottom: 0px;
-  background: rgba(47, 48, 58, 0.9);
+  background:var(--wite-color));
 }
 .modal {
   position: absolute;
