@@ -439,9 +439,9 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% -50%);
-  width: 528px;
-  height: 581px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 450px;
   background-color: rgba(255, 255, 255, 0.6);
 }
 .btn-close {
